@@ -1,0 +1,83 @@
+.profile-card {
+  border: 1px solid var(--light-color);
+  padding: 32px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  align-items: center;
+  height: 160px;
+}
+
+.user-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 232px;
+  width: 100%;
+
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .user-name {
+      font-size: 18px;
+      line-height: 1.3;
+      font-weight: 900;
+    }
+
+    .user-nick {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  }
+}
+
+.description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.subcribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 2px;
+  background-color: #AE7AFF;
+  color: var(--dark-color);
+  width: 157px;
+  height: 44px;
+  cursor: pointer;
+  border: none;
+}
+
+.subcribe-text {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.shared {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #AE7AFF;
+  height: 44px;
+  width: 44px;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+}
