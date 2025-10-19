@@ -1,0 +1,81 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 5%;
+  height: 100vh;
+}
+
+.login-form {
+  max-width: 440px;
+  width: 100%;
+}
+
+.login-title {
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  margin-bottom: 60px;
+}
+
+.input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input {
+  border: 1px solid var(--light-color);
+  padding: 12px 20px;
+  padding-right: 52px;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  border-radius: 2px;
+  width: 100%;
+  font-family: 'JetBrains Mono';
+}
+
+.input-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-login {
+  margin-top: 16px;
+  background-color: #AE7AFF;
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid var(--dark-color);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  :host {
+    justify-content: center;
+  }
+
+  .login-image {
+    display: none;
+  }
+}

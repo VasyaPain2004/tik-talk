@@ -1,36 +1,34 @@
+@if (profile) {
 <div class="profile-card">
   <div class="user-block">
     <img
-      src="/user.png"
+      [src]="profile.avatarUrl | imgUrl"
       alt=""
       width="71px"
       height="71px"
       style="border-radius: 50%; overflow: hidden"
     />
     <div class="user-info">
-      <span class="user-name">Райан Гослинг</span>
-      <span class="user-nick">ryan.gosling</span>
+      <span class="user-name">{{ profile.firstName }} {{ profile.lastName }}</span>
+      <span class="user-nick">{{ profile.username }}</span>
     </div>
   </div>
   <div class="description">
-    Список навыков, который мы обсудили выше, — основа резюме, но не единственная его часть. Также
-    можно рассказать о себе в классическом смысле — этот раздел можно добавить в сопроводительное
-    письмо.
+    {{ profile.description }}
   </div>
   <div class="tags">
-    <app-tag></app-tag>
-    <app-tag></app-tag>
-    <app-tag></app-tag>
-    <app-tag></app-tag>
-    <app-tag></app-tag>
+    @for (name of profile.stack; track name) {
+      <app-tag [name]="name"></app-tag>
+    }
   </div>
   <div class="buttons">
     <button class="subcribe">
       <span class="subcribe-text">Подписаться</span>
-      <img src="/subcribe.svg" alt="">
+      <img src="/subcribe.svg" alt="" />
     </button>
     <button class="shared">
-      <img src="/shared.svg" alt="">
+      <img src="/shared.svg" alt="" />
     </button>
   </div>
 </div>
+}

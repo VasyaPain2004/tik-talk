@@ -13,5 +13,9 @@ body {
   background-color: var(--dark-color);
   color: var(--light-color);
   font-family: 'JetBrains Mono', sans-serif;
+  background: url('/bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
