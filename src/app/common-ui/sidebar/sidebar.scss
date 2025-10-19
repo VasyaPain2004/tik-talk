@@ -1,0 +1,149 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--dark-color);
+  padding: 20px 12px;
+}
+
+.sidebar-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.sidebar-logo {
+  display: inline-block;
+  width: 61px;
+  height: 74px;
+  padding-left: 16px;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-links__row {
+  position: relative;
+  display: flex;
+  gap: 12px;
+  padding: 8px 16px;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &:hover, &:focus-visible {
+    background-color: #161616;
+    color: #AE7AFF;
+
+    svg path {
+      fill: #AE7AFF;
+    }
+  }
+
+  .count {
+    position: absolute;
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--dark-color);
+    padding: 1px 6px;
+    background-color: #AE7AFF;
+    width: 26px;
+    height: 18px;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.sidebar-links__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.subscribers {
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.subscribers-title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.subscribers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subscribers-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.subscribers-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.subscribers-name {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.all-subscribers {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.all-subscribers-text {
+  color: #ae7aff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.me-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.me-username {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.me-img {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}

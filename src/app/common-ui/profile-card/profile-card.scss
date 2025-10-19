@@ -16,6 +16,13 @@
   max-width: 232px;
   width: 100%;
 
+  .user-avatar {
+    display: inline-block;
+    width: 71px;
+    height: 71px;
+    border-radius: 50%;
+  }
+
   .user-info {
     display: flex;
     flex-direction: column;

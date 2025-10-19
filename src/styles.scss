@@ -9,6 +9,15 @@
   padding: 0;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   background-color: var(--dark-color);
   color: var(--light-color);
@@ -16,6 +25,5 @@ body {
   background: url('/bg.jpg') no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
 

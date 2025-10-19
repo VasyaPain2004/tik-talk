@@ -1,4 +1,10 @@
 :host {
+  max-width: 1440px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 300px 1fr;
+}
+
+.outlet-wrapper {
+  padding: 24px;
 }
