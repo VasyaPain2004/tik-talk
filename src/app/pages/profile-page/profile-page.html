@@ -26,7 +26,9 @@
     <div>
       <div class="right-subscribe-wrapper mb16">
         <h3 class="h6">Подписчики</h3>
-        <span class="right-subscribe-count bold12">28</span>
+        @if (me$ | async; as me) {
+          <span class="right-subscribe-count bold12">{{me.subscribersAmount}}</span>
+        }
       </div>
       <div class="subscriber-avatars">
         @for (subscriber of subscribers$ | async; track subscriber.id) {

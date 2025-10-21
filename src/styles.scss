@@ -1,10 +1,10 @@
 :root {
   --dark-color: #000;
   --light-color: #fff;
-  --primary-color: #AE7AFF;
+  --primary-color: #ae7aff;
   --dark-hover-color: #161616;
   --light-75-color: rgba(255, 255, 255, 0.75);
-  --mint-green-color: #98E9AB;
+  --mint-green-color: #98e9ab;
 }
 
 * {
@@ -20,6 +20,11 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
 }
 
 body {
@@ -135,4 +140,3 @@ body {
 .mb60 {
   margin-bottom: 60px;
 }
-

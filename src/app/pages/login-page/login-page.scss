@@ -23,10 +23,11 @@
 
 .input {
   border: 1px solid var(--light-color);
+  outline: none;
   padding: 12px 20px;
   padding-right: 52px;
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  background-color: var(--dark-color) !important;
+  color: var(--light-color) !important;
   border-radius: 2px;
   width: 100%;
   font-family: 'JetBrains Mono';
