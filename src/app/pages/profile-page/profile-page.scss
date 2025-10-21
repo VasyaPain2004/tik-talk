@@ -1,0 +1,107 @@
+.profile-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.edit-wrapper {
+  padding-right: 142px;
+}
+
+.edit {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 174px;
+  height: 44px;
+  background-color: #AE7AFF;
+  color: var(--dark-color);
+  border-radius: 2px;
+  border: 1px solid var(--dark-color);
+
+  span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.profile-page__body {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 64px;
+}
+
+.right {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.right-subscribe-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  .right-subscribe-text {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .right-subscribe-count {
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    background-color: #98E9AB;
+    width: 26px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.subscriber-avatar-btn {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.subscriber-avatars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+}
+
+.skills-title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.about-me-title {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.about-me-desc {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}

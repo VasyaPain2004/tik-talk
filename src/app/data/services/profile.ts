@@ -24,9 +24,13 @@ export class ProfileService {
       .pipe(tap((res) => this.me.set(res)));
   }
 
-  getSubscribersShortList() {
+  getAccount(id: string) {
+    return this.http.get<Profile>(`${this.baseApiUrl}/account/${id}`);
+  }
+
+  getSubscribersShortList(subsAmount = 3) {
     return this.http
       .get<Pageable<Profile>>(`${this.baseApiUrl}/account/subscribers/947370492`)
-      .pipe(map((res) => res.items.slice(0, 3)));
+      .pipe(map((res) => res.items.slice(0, subsAmount)));
   }
 }

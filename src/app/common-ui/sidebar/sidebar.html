@@ -78,7 +78,7 @@
     <img class="me-img" [src]="me.avatarUrl | imgUrl" alt="" /> } @else {
     <img class="me-img" src="/user.png" alt="" />
     }
-    <span class="me-username">ryan.gosling</span>
+    <span class="me-username">{{me.username}}</span>
   </div>
   <a class="me-settings" [routerLink]="['settings']">
     <img src="/settings.svg" alt="" />
