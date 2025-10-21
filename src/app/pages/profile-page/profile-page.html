@@ -3,7 +3,7 @@
   <app-profile-header [profile]="profile"></app-profile-header>
   <div class="edit-wrapper">
     <a [routerLink]="['/settings']" class="edit">
-      <span>Редактировать</span>
+      <span class="btn-bold14">Редактировать</span>
       <svg
         width="16"
         height="16"
@@ -24,9 +24,9 @@
   <div>sd</div>
   <div class="right">
     <div>
-      <div class="right-subscribe-wrapper">
-        <h3 class="right-subscribe-text">Подписчики</h3>
-        <span class="right-subscribe-count">28</span>
+      <div class="right-subscribe-wrapper mb16">
+        <h3 class="h6">Подписчики</h3>
+        <span class="right-subscribe-count bold12">28</span>
       </div>
       <div class="subscriber-avatars">
         @for (subscriber of subscribers$ | async; track subscriber.id) {
@@ -50,17 +50,17 @@
         </a>
       </div>
     </div>
-    <div class="skills">
-      <h3 class="skills-title">Навыки</h3>
+    <div>
+      <h3 class="h6 mb16">Навыки</h3>
       <div class="skills-tags">
         @for (name of ['JS', 'CSS', 'HTML', 'Angular', 'Frontend']; track name) {
         <app-tag [name]="name"></app-tag>
         }
       </div>
     </div>
-    <div class="about-me">
-      <h3 class="about-me-title">О себе</h3>
-      <p class="about-me-desc">
+    <div>
+      <h3 class="h6 mb16">О себе</h3>
+      <p class="medium12">
         Список навыков, который мы обсудили выше, — основа резюме, но не единственная его часть.
         Также можно рассказать о себе в классическом смысле — этот раздел можно добавить
         в сопроводительное письмо.

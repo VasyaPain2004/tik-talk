@@ -1,12 +1,12 @@
 <form class="login-form" [formGroup]="form" (ngSubmit)="onSubmit()">
-  <h1 class="login-title">Вход</h1>
-  <div class="input-block">
-    <label for="username" class="label">Telegram username</label>
+  <h1 class="h1 mb60">Вход</h1>
+  <div class="input-block mb16">
+    <label for="username" class="bold12">Telegram username</label>
     <div class="input-wrapper">
       <input
         type="text"
         placeholder="Введите логин"
-        class="input"
+        class="input regular14"
         id="username"
         formControlName="username"
       />
@@ -14,12 +14,12 @@
     </div>
   </div>
   <div class="input-block">
-    <label for="password" class="label">Пароль</label>
+    <label for="password" class="bold12">Пароль</label>
     <div class="input-wrapper">
       <input
         [type]="isPasswordVisible() ? 'text' : 'password'"
         placeholder="Введите пароль"
-        class="input"
+        class="input regular14"
         id="password"
         formControlName="password"
       />
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <button class="btn-login" type="submit">Войти</button>
+  <button class="btn-login btn-bold14" type="submit">Войти</button>
 </form>
 
 <img src="/login.svg" alt="logo" class="login-image" />

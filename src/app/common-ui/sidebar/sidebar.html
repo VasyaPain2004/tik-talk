@@ -17,7 +17,7 @@
           fill="white"
         />
       </svg>
-      <span class="sidebar-links__text">Моя страница</span>
+      <span class="sidebar-links__text btn-bold14">Моя страница</span>
     </div>
     <div class="sidebar-links__row">
       <svg
@@ -32,8 +32,8 @@
           fill="white"
         />
       </svg>
-      <span class="sidebar-links__text">Чаты</span>
-      <span class="count">28</span>
+      <span class="sidebar-links__text btn-bold14">Чаты</span>
+      <span class="count bold12">28</span>
     </div>
     <div class="sidebar-links__row">
       <svg
@@ -48,24 +48,24 @@
           fill="white"
         />
       </svg>
-      <span class="sidebar-links__text">Поиск</span>
+      <span class="sidebar-links__text btn-bold14">Поиск</span>
     </div>
   </div>
 
   <div class="subscribers">
-    <h3 class="subscribers-title">Подписчики</h3>
+    <h3 class="subscribers-title medium12">Подписчики</h3>
 
     <ul class="subscribers-list">
       @for (profile of subscribers$ | async; track profile.id) {
       <li class="subscribers-item">
         <img [src]="profile.avatarUrl | imgUrl" alt="" class="subscribers-img" />
-        <span class="subscribers-name">{{ profile.firstName }} {{ profile.lastName }}</span>
+        <span class="btn-bold14">{{ profile.firstName }} {{ profile.lastName }}</span>
       </li>
       }
     </ul>
 
     <a [routerLink]="['/login']" class="all-subscribers">
-      <span class="all-subscribers-text">Все подписчики</span>
+      <span class="all-subscribers-text medium12">Все подписчики</span>
       <img src="/arrow.svg" alt="" />
     </a>
   </div>
@@ -78,7 +78,7 @@
     <img class="me-img" [src]="me.avatarUrl | imgUrl" alt="" /> } @else {
     <img class="me-img" src="/user.png" alt="" />
     }
-    <span class="me-username">{{me.username}}</span>
+    <span class="btn-bold14">{{ me.username }}</span>
   </div>
   <a class="me-settings" [routerLink]="['settings']">
     <img src="/settings.svg" alt="" />

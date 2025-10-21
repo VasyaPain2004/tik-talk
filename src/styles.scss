@@ -1,6 +1,10 @@
 :root {
   --dark-color: #000;
   --light-color: #fff;
+  --primary-color: #AE7AFF;
+  --dark-hover-color: #161616;
+  --light-75-color: rgba(255, 255, 255, 0.75);
+  --mint-green-color: #98E9AB;
 }
 
 * {
@@ -26,5 +30,109 @@ body {
   background-position: center;
   background-attachment: fixed;
   min-height: 100vh;
+}
+
+.h1 {
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 900;
+}
+
+.h2 {
+  font-size: 36px;
+  line-height: 46px;
+  font-weight: 900;
+}
+
+.h3 {
+  font-size: 30px;
+  line-height: 38px;
+  font-weight: 900;
+}
+
+.h4 {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 900;
+}
+
+.h5 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 900;
+}
+
+.h6 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 900;
+}
+
+.bold16 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.medium16 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.regular16 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.bold14 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.medium14 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.regular14 {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.bold12 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.medium12 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.regular12 {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.btn-bold14 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.mb16 {
+  margin-bottom: 16px;
+}
+
+.mb60 {
+  margin-bottom: 60px;
 }
 

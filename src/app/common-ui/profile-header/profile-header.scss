@@ -17,15 +17,4 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-
-  .profile-header__username {
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  .profile-header__nick {
-    font-size: 14px;
-    line-height: 21px;
-  }
 }

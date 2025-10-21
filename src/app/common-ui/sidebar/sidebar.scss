@@ -3,7 +3,6 @@
   flex-direction: column;
   background-color: var(--dark-color);
   padding: 20px 12px;
-  // height: 100vh;
 }
 
 .sidebar-wrapper {
@@ -39,35 +38,26 @@
   transition: all .3s ease-in-out;
 
   &:hover, &:focus-visible {
-    background-color: #161616;
-    color: #AE7AFF;
+    background-color: var(--dark-hover-color);
+    color: var(--primary-color);
 
     svg path {
-      fill: #AE7AFF;
+      fill: var(--primary-color);
     }
   }
 
   .count {
     position: absolute;
     display: block;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 16px;
     color: var(--dark-color);
     padding: 1px 6px;
-    background-color: #AE7AFF;
+    background-color: var(--primary-color);
     width: 26px;
     height: 18px;
     right: 16px;
     top: 50%;
     transform: translateY(-50%);
   }
-}
-
-.sidebar-links__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .subscribers {
@@ -78,10 +68,7 @@
 }
 
 .subscribers-title {
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  color: rgba(255, 255, 255, 0.75);
+  color: var(--light-75-color);
 }
 
 .subscribers-list {
@@ -105,12 +92,6 @@
   border-radius: 50%;
 }
 
-.subscribers-name {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-}
-
 .all-subscribers {
   display: flex;
   gap: 11px;
@@ -119,10 +100,7 @@
 }
 
 .all-subscribers-text {
-  color: #ae7aff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
+  color: var(--primary-color);
 }
 
 .me {
@@ -135,12 +113,6 @@
   display: flex;
   gap: 12px;
   align-items: center;
-}
-
-.me-username {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 .me-img {
