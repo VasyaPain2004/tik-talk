@@ -1,24 +1,25 @@
-import { Component, effect, inject } from '@angular/core';
+import { Component, effect, inject, ViewChild } from '@angular/core';
 import { ProfileHeader } from '../../common-ui/profile-header/profile-header';
 import {
   FormBuilder,
-  FormControl,
-  FormGroup,
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
 import { ProfileService } from '../../data/services/profile';
 import { firstValueFrom } from 'rxjs';
+import { AvatarUpload } from "./avatar-upload/avatar-upload";
 
 @Component({
   selector: 'app-settings',
-  imports: [ProfileHeader, ReactiveFormsModule],
+  imports: [ProfileHeader, ReactiveFormsModule, AvatarUpload],
   templateUrl: './settings.html',
   styleUrl: './settings.scss',
 })
 export class Settings {
   fb = inject(FormBuilder);
   profileService = inject(ProfileService);
+
+  @ViewChild(AvatarUpload) avatarUploader!: AvatarUpload
 
   form = this.fb.group({
     firstName: ['', Validators.required],
@@ -39,11 +40,19 @@ export class Settings {
     });
   }
 
+  ngAfterViewInit() {
+
+  }
+
   onSave() {
     this.form.markAllAsTouched();
     this.form.updateValueAndValidity();
 
     // if (this.form.invalid) return
+
+    if (this.avatarUploader.avatar) {
+      firstValueFrom(this.profileService.uploadAvatar(this.avatarUploader.avatar))
+    }
 
     //@ts-ignore
     firstValueFrom(this.profileService.patchProfile({
