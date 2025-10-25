@@ -21,7 +21,7 @@
 </header>
 
 <main class="profile-page__body">
-  <div>sd</div>
+  <app-post-feed></app-post-feed>
   <div class="right">
     <div>
       <div class="right-subscribe-wrapper mb16">
@@ -55,7 +55,7 @@
     <div>
       <h3 class="h6 mb16">Навыки</h3>
       <div class="skills-tags">
-        @for (name of ['JS', 'CSS', 'HTML', 'Angular', 'Frontend']; track name) {
+        @for (name of profile.stack; track name) {
         <app-tag [name]="name"></app-tag>
         }
       </div>

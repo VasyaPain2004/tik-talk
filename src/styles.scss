@@ -7,7 +7,9 @@
   --mint-green-color: #98e9ab;
 }
 
-* {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -139,4 +141,37 @@ body {
 
 .mb60 {
   margin-bottom: 60px;
+}
+
+.flex-1 {
+  display: flex;
+  flex: 1;
+}
+
+.tt-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tt-form-label__text {
+  color: var(--light-75-color);
+}
+
+.tt-form-input {
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid var(--light-color);
+  height: 33px;
+  background: none;
+  color: var(--light-color);
+
+  &:focus-visible {
+    outline: 1px solid var(--primary-color);
+  }
+}
+
+.tt-textarea {
+  height: 84px;
+  resize: none;
 }

@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 300px 1fr;
-  height: 100vh;
+  height: calc(100vh - 48px);
 }
 
 .outlet-wrapper {

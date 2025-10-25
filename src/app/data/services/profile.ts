@@ -33,4 +33,8 @@ export class ProfileService {
       .get<Pageable<Profile>>(`${this.baseApiUrl}/account/subscribers/947370492`)
       .pipe(map((res) => res.items.slice(0, subsAmount)));
   }
+
+  patchProfile(profile: Partial<Profile>) {
+    return this.http.patch<Profile>(`${this.baseApiUrl}/account/me`, profile);
+  }
 }

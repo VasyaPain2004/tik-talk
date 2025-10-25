@@ -6,11 +6,12 @@ import { switchMap } from 'rxjs';
 import { toObservable } from '@angular/core/rxjs-interop';
 import { AsyncPipe } from '@angular/common';
 import { ImgUrlPipe } from '../../helpers/pipes/img-url-pipe';
-import { Tag } from "../../common-ui/tag/tag";
+import { PostFeed } from "./post-feed/post-feed";
+import { Tag } from '../../common-ui/tag/tag';
 
 @Component({
   selector: 'app-profile-page',
-  imports: [ProfileHeader, AsyncPipe, RouterLink, ImgUrlPipe, Tag],
+  imports: [ProfileHeader, AsyncPipe, RouterLink, ImgUrlPipe, Tag, PostFeed],
   templateUrl: './profile-page.html',
   styleUrl: './profile-page.scss'
 })
